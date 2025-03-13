@@ -61,11 +61,11 @@
                 case 'noise':
                     m.noise();
                     break;
-                case 'vignette':
-                    m.vignette();
+                case 'edgeWork':
+                    m.edgeWork();
                     break;
-                case 'vibrance':
-                    m.vibrance();
+                case 'lensBlur':
+                    m.lensBlur();
                     break;
                 default:
                     console.log('Efeito não reconhecido');
@@ -89,13 +89,12 @@
             <div class="col-6">
                 <form>
 
-                    <button type="button" class="btn btn-dark" onclick="resetarImagem()"><i
-                            class="bi bi-arrow-clockwise"></i></button>
-                    <button type="button" class="btn btn-primary" onclick="aplicarEfeito('ink')">Ink Filter</button>
-                    <button type="button" class="btn btn-success" onclick="aplicarEfeito('noise')">Noise</button>
-                    <button type="button" class="btn btn-danger" onclick="aplicarEfeito('sepia')">Sepia</button>
-                    <button type="button" class="btn btn-info" onclick="aplicarEfeito('vignette')">Vignette</button>
-                    <button type="button" class="btn btn-warning" onclick="aplicarEfeito('vibrance')">Vibrance</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="resetarImagem()">Reset</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="aplicarEfeito('ink')">Ink Filter</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="aplicarEfeito('noise')">Noise</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="aplicarEfeito('sepia')">Sepia</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="aplicarEfeito('edgeWork')">EdgeWork</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="aplicarEfeito('lensBlur')">LensBlur</button>
 
                     <br /><br />
                     <hr />

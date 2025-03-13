@@ -36,12 +36,12 @@ class ManipulacaoImg {
         this.canvas.draw(this.texture).sepia(1).update();
     }
 
-    vignette() {
-        this.canvas.draw(this.texture).vignette(0.25, 0.74).update();
+    edgeWork() {
+        this.canvas.draw(this.texture).edgeWork(10).update();
     }
 
-    vibrance() {
-        this.canvas.draw(this.texture).vibrance(1).update();
+    lensBlur() {
+        this.canvas.draw(this.texture).lensBlur(11, 0.75, 0).update();
     }
 
     brilhoContraste(brilho, contraste) {
